@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import PropTypes from 'prop-types';
 class Header extends Component {
     // propTypes:{
@@ -21,11 +22,11 @@ class Header extends Component {
     render(){
         return(
             <header className="header">
-                <span href="www.baidu.com" 
-                    className="leftBtn" 
+                <span 
+                    className="leftBtn icon iconfont icon-back" 
                     title={this.props.leftBtn} 
                     onClick = {this.goBack.bind(this)}
-                >{this.props.leftBtn}</span>
+                ></span>
                 <span>{ this.props.title }</span>
                 { this.props.rightBtn && <span title={this.props.rightBtn}>{this.props.rightBtn}</span> }
             </header>

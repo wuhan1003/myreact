@@ -20,7 +20,12 @@ let routes = [
                 component:ArticleDetail
             },
         ]
-    },   
+    },  
+    {
+        path:'/article/:id',
+        exact :true,
+        component:ArticleDetail
+    }, 
     {
         path:'/friend',
         exact :true,
@@ -37,3 +42,4 @@ let routes = [
 ]
 
 export default routes;
+export {Home,Article,ArticleDetail,Friend,FriendDetail};

@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import Header from '../components/header';
 
 class Home extends Component {
     constructor(props){
@@ -7,11 +8,16 @@ class Home extends Component {
         this.state = {}
     }
     render(){
-        return (                
-            <footer className = "footer">
-                <NavLink to = "/article"><i></i><span> 文章列表页 </span></NavLink>
-                <NavLink to = "/friend"><i></i><span>好友</span></NavLink>
-            </footer>
+        return (
+            <div className = "container">
+                <Header />                
+                <footer className = "footer">
+                    <NavLink to = "/article"><i className = "icon iconfont icon-viewlist"></i><span> 文章列表 </span></NavLink>
+                    <NavLink to = "/friend"><i className = "icon iconfont icon-atm"></i><span>好友</span></NavLink>
+                    <NavLink to = "/personal"><i className="icon iconfont icon-account"></i><span>个人中心</span></NavLink>
+                </footer>
+            </div>                
+            
         )
     }
 }

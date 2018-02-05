@@ -5,7 +5,11 @@ class Article extends Component {
     // constructor(props){
     //     super(props);
     // }
-
+    componentWillMount(){
+        const { match, history } = this.props;
+        console.log( match );
+        console.log( history )
+    }
     render(){
         return (
             <div className="container">

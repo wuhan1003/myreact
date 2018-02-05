@@ -9,8 +9,8 @@ class List extends Component {
         return (
             <div>
                 <ul>
-                    <li><Link to = "article/1">跳转到文章详情1</Link></li>
-                    <li><Link to = "friend/1">跳转到好友详情1</Link></li>
+                    <li><Link to = "/article/1">跳转到文章详情1</Link></li>
+                    <li><Link to = "/friend/1">跳转到好友详情1</Link></li>
                 </ul>
             </div>
         )
