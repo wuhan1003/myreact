@@ -17,7 +17,13 @@ class Header extends Component {
         }
     }    
     goBack(){
-        console.log('header');
+        let { history } = this.props.router;
+        history.goBack();
+    }
+    componentWillMount(){
+        
+        console.log( this )
+        console.log(this.props.localtion)
     }
     render(){
         return(
