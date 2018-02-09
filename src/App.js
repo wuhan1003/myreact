@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect,} from 'react-router-dom'
 // import { DatePicker } from 'antd';
 import 'antd/dist/antd.css';
 import './asset/styles/components.scss'
 import './asset/styles/iconfont.css';
-import routes,{ Home,Article,ArticleDetail,Friend,FriendDetail} from './asset/routes'
+// import routes,
+import{ Home,
+  Article,
+  ArticleDetail,
+  Friend,
+  FriendDetail,
+  // NoFound
+} from './asset/routes'
 
 
 // const RouteWithSubRoutes = ( route ) => (
@@ -12,6 +19,18 @@ import routes,{ Home,Article,ArticleDetail,Friend,FriendDetail} from './asset/ro
 //     <route.component {...props} routes = {route.routes} />
 //   )}/>
 // )
+function NoFound(props){
+  return (
+    <div>
+       404
+    </div>
+  )
+
+
+}
+
+
+
 
 // console.log( r );
 class App extends Component {
@@ -23,11 +42,14 @@ class App extends Component {
 
 
           <div className="body">
-              <Route path = "/" component = { Home }></Route>
+              {/* <Redirect exact = { true} from = "/" to = "/index"></Redirect> */}
+              <Route exact = { true} path = "/index" component = { Home }></Route>
+              <Route exact = { true} path = "/" component = { Home }></Route>
               <Route exact = { true} path = "/article" component = { Article } ></Route>
               <Route exact = { true} path = "/article/:id" component = { ArticleDetail } ></Route>
               <Route exact = { true} path = "/friend" component = { Friend } ></Route>
               <Route exact = { true} path = "/friend/:id" component = { FriendDetail } ></Route>
+              <Route component={ NoFound }/>
             {
               // routes.map((route,i)=>{
               //   return <RouteWithSubRoutes key = {i} { ...route } />

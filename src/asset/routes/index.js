@@ -3,6 +3,7 @@ import Article from '../pages/article';
 import ArticleDetail from '../pages/article-detail';
 import Friend from '../pages/friend';
 import FriendDetail from '../pages/friend-detail';
+// import NoFound from '../pages/NoFound';
 let routes = [
     {
         path:'/',

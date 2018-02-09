@@ -9,18 +9,21 @@ class ListContent extends Component {
                 {
                     title:'这个文章标题',
                     id:'1',
+                    path:'/article/1',
                     img:'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                     description:'这是文章描述，这是文章描述，这是文章描述，这是文章描述，这是文章描述，'
                 },
                 {
                     title:'这个文章标题',
                     id:'1',
+                    path:'/article/2',
                     img:'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                     description:'这是文章描述，这是文章描述，这是文章描述，这是文章描述，这是文章描述，'
                 },
                 {
                     title:'这个文章标题',
                     id:'1',
+                    path:'/article/3',
                     img:'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                     description:'这是文章描述，这是文章描述，这是文章描述，这是文章描述，这是文章描述，'
                 }
@@ -33,17 +36,19 @@ class ListContent extends Component {
                 <List
                     itemLayout="horizontal"
                     size = "large"
+                    split
                     dataSource={this.state.dataSource}
-                    renderItem = {item=>(
+                    renderItem = {item=>(                        
                         <List.Item>
+                           <Link to={item.path}> 
                             <List.Item.Meta
                                 avatar={<Avatar src={item.img} />}
-                                title={<h3>{item.title}</h3>}
+                                title={item.title}
                                 description={item.description}
                                 />
-                        </List.Item>
+                             </Link> 
+                        </List.Item>                          
                     )}
-                
                 />
             </div>                
             
