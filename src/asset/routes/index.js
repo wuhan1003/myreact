@@ -3,6 +3,7 @@ import Article from '../pages/article';
 import ArticleDetail from '../pages/article-detail';
 import Friend from '../pages/friend';
 import FriendDetail from '../pages/friend-detail';
+import Personal from '../pages/personal'
 // import NoFound from '../pages/NoFound';
 let routes = [
     {
@@ -43,4 +44,4 @@ let routes = [
 ]
 
 export default routes;
-export {Home,Article,ArticleDetail,Friend,FriendDetail};
+export {Home,Article,ArticleDetail,Friend,FriendDetail,Personal};

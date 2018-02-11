@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Header from '../components/header';
 import ListContent from '../components/list';
 // import { Tabs } from 'antd';
@@ -10,10 +10,11 @@ class Home extends Component {
         super(props);
         this.state = {}
     }
+
     render(){
         return (
             <div className = "container">
-                
+                <div className="text"></div>
                 {/* <Tabs defaultActiveKey = "1">
                     <TabPane
                         tab = {
@@ -43,7 +44,7 @@ class Home extends Component {
                         key = "3"
                     >个人中心</TabPane>
                 </Tabs> */}
-            
+{/*             
                 <Tabs>
                     <Tabs.Title key = "title">
                         <p>
@@ -71,14 +72,14 @@ class Home extends Component {
                             这是个人中心
                         </section>
                     </Tabs.Content>
-                </Tabs>
+                </Tabs> */}
 
 
-                {/* <footer className = "footer">
+                <footer className = "footer">
                     <NavLink to = "/article"><i className = "icon iconfont icon-viewlist"></i><span> 文章列表 </span></NavLink>
                     <NavLink to = "/friend"><i className = "icon iconfont icon-atm"></i><span>好友</span></NavLink>
                     <NavLink to = "/personal"><i className="icon iconfont icon-account"></i><span>个人中心</span></NavLink>
-                </footer> */}
+                </footer>
             </div>                
             
         )

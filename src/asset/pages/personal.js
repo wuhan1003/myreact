@@ -1,14 +1,14 @@
 import React,{ Component } from 'react';
-class Nofound extends Component {
+class Personal extends Component {
     // constructor(props){
     //     super(props);
     // }
 
     render(){
         return (
-            <div>404</div>
+            <div>这是个人中心</div>
         )
     }
 
 }
-export default Nofound;
+export default Personal;

@@ -1,6 +1,34 @@
 li,ul,p,div,html,body{margin:0; padding:0;list-style:none;}
+
+
+@media screen and (max-width:320px) {
+    font-size:12px;
+}
+@media (min-width:321px) and (max-width:375px) {
+    html{ font-size:14px;}
+}
+@media (min-width:376px) and (max-width:414px) {
+    html{ font-size:14px;}
+}
+@media (min-width:416px) and (max-width:639px) {
+    html{ font-size:14px;}
+}
+@media (min-width:640px) and (max-width:767px) {
+    html{ font-size:14px;}
+}
+@media (min-width:768px) and (max-width:992px) {
+    html{ font-size:14px;}
+}
+@media (min-width:993px) and (max-width:1200px) {
+    html{ font-size:14px;}
+}
+@media screen and (min-width:1201px){
+    html{ font-size:14px;}
+}
+
+
 .header{
-    height:44px; width:100%; overflow:hidden; background-color:#f5f5f5; font-size:16px;display:flex;text-align:center; justify-content:center;align-items:center;
+    height:4rem;width:100%; overflow:hidden; background-color:#f5f5f5; font-size:16px;display:flex;text-align:center; justify-content:center;align-items:center;
     .leftBtn,
     .rightBtn,
     &>a{display:block;position:absolute; top:0; width:44px; height:44px; overflow:hidden; text-align:center; font-size:22px; line-height:44px;color:#666;}
@@ -27,8 +55,8 @@ li,ul,p,div,html,body{margin:0; padding:0;list-style:none;}
     display:flex;justify-content:center; align-items:center;
     & > a{
         display:block; flex:1 0 auto;text-align:center;        
-        & > p > i { width:26px; height:26px; margin:0 auto; font-size:20px;display:block; color: #333; } 
-        & > p > span{ display:block; line-height:22px; font-size:14px; color:#333; }
+        i { width:26px; height:26px; margin:0 auto; font-size:20px;display:block; color: #333; } 
+        span{ display:block; line-height:22px; font-size:14px; color:#333; }
     }
 }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect,} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect,Switch} from 'react-router-dom'
 // import { DatePicker } from 'antd';
 import 'antd/dist/antd.css';
 import './asset/styles/components.scss'
@@ -10,8 +10,10 @@ import{ Home,
   ArticleDetail,
   Friend,
   FriendDetail,
-  // NoFound
+  // NoFound,
+  Personal
 } from './asset/routes'
+// import Switch from 'react-router-dom/Switch';
 
 
 // const RouteWithSubRoutes = ( route ) => (
@@ -20,6 +22,7 @@ import{ Home,
 //   )}/>
 // )
 function NoFound(props){
+  console.log(props)
   return (
     <div>
        404
@@ -38,29 +41,33 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          
+        
 
 
           <div className="body">
               {/* <Redirect exact = { true} from = "/" to = "/index"></Redirect> */}
-              <Route exact = { true} path = "/index" component = { Home }></Route>
-              <Route exact = { true} path = "/" component = { Home }></Route>
-              <Route exact = { true} path = "/article" component = { Article } ></Route>
-              <Route exact = { true} path = "/article/:id" component = { ArticleDetail } ></Route>
-              <Route exact = { true} path = "/friend" component = { Friend } ></Route>
-              <Route exact = { true} path = "/friend/:id" component = { FriendDetail } ></Route>
-              <Route component={ NoFound }/>
-            {
-              // routes.map((route,i)=>{
-              //   return <RouteWithSubRoutes key = {i} { ...route } />
-              // })
+              
+            
+              
               
 
+              <Route path = "/"  component = { Home } />
+              <Route exact = { true } path = "/article"  component = { Article } />
+              <Route exact = { true } path = "/friend" component = { Friend } />
+              <Route exact = { true } path = "/personal" component = { Personal } />
+      
+      
+              {/* switch 匹配第一个满足条件的路由地址*/   }
+              {/* <Switch>
+                <Route exact = { true } path = "/index" component = { Home }></Route>
+                <Route exact = { true } path = "/article/:id" component = { ArticleDetail } ></Route>
+                <Route exact = { true } path = "/friend/:id" component = { FriendDetail } ></Route>
+                <Route exact = { true } path = "*" component={ NoFound } />
+              </Switch> */}
 
 
 
-
-            }
+            
           </div>
         </Router>               
       </div>
