@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Redirect,Switch} from 'react-router-dom'
 // import { DatePicker } from 'antd';
 import 'antd/dist/antd.css';
-import './asset/styles/components.scss'
-import './asset/styles/iconfont.css';
+import '../../styles/components.scss'
+import '../../styles/iconfont.css';
 // import routes,
 import{ Home,
   Article,
