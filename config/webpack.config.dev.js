@@ -11,6 +11,7 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
+const fs = require('fs');
 // const polyfills = require('polyfill')
 
 // Webpack uses `publicPath` to determine where the app is being served from.
@@ -29,6 +30,38 @@ function resolve(dir) {
 }
 
 
+const filePath = resolve('./src/asset/pages');
+const dirArr = fs.readdirSync(filePath);
+let entryObj = {},pluginObj =[];
+dirArr.forEach(item=>{
+  let entryFile = [require.resolve('./polyfills')];
+  const dirPaht = `${filePath}/${item}`;
+  if(fs.statSync(dirPaht).isDirectory()){
+    entryFile.push(`${item}/index.js`);
+    entryObj[item] = entryFile;
+    const htmlTemplate = new HtmlWebpackPlugin({
+        eject:true,              //js文件放在body标签最下面
+        template:paths.appHtml,  //生成html的模板文件
+        chunks:[item],           //筛选插入body标签中生成的js文件
+        filename:`${item}.html`  //文件名称
+    })
+    pluginObj.push(htmlTemplate);
+  };
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.
@@ -40,47 +73,54 @@ module.exports = {
   // These are the "entry points" to our application.
   // This means they will be the "root" imports that are included in JS bundle.
   // The first two entry points enable "hot" CSS and auto-refreshes for JS.
-  entry: [
-    // We ship a few polyfills by default:
-    require.resolve('./polyfills'),
-    // Include an alternative client for WebpackDevServer. A client's job is to
-    // connect to WebpackDevServer by a socket and get notified about changes.
-    // When you save a file, the client will either apply hot updates (in case
-    // of CSS changes), or refresh the page (in case of JS changes). When you
-    // make a syntax error, this client will display a syntax error overlay.
-    // Note: instead of the default WebpackDevServer client, we use a custom one
-    // to bring better experience for Create React App users. You can replace
-    // the line below with these two lines if you prefer the stock client:
-    // require.resolve('webpack-dev-server/client') + '?/',
-    // require.resolve('webpack/hot/dev-server'),
-    require.resolve('react-dev-utils/webpackHotDevClient'),
-    // Finally, this is your app's code:
-    paths.appIndexJs,
-    // We include the app code last so that if there is a runtime error during
-    // initialization, it doesn't blow up the WebpackDevServer client, and
-    // changing JS code would still trigger a refresh.
-  ],
-  output: {
-    // Add /* filename */ comments to generated require()s in the output.
-    pathinfo: true,
-    // This does not produce a real file. It's just the virtual path that is
-    // served by WebpackDevServer in development. This is the JS bundle
-    // containing code from all our entry points, and the Webpack runtime.
-    filename: 'static/js/bundle.js',
-    // There are also additional JS chunk files if you use code splitting.
-    chunkFilename: 'static/js/[name].chunk.js',
-    // This is the URL that app is served from. We use "/" in development.
+  // entry: [
+  //   // We ship a few polyfills by default:
+  //   require.resolve('./polyfills'),
+  //   // Include an alternative client for WebpackDevServer. A client's job is to
+  //   // connect to WebpackDevServer by a socket and get notified about changes.
+  //   // When you save a file, the client will either apply hot updates (in case
+  //   // of CSS changes), or refresh the page (in case of JS changes). When you
+  //   // make a syntax error, this client will display a syntax error overlay.
+  //   // Note: instead of the default WebpackDevServer client, we use a custom one
+  //   // to bring better experience for Create React App users. You can replace
+  //   // the line below with these two lines if you prefer the stock client:
+  //   // require.resolve('webpack-dev-server/client') + '?/',
+  //   // require.resolve('webpack/hot/dev-server'),
+  //   require.resolve('react-dev-utils/webpackHotDevClient'),
+  //   // Finally, this is your app's code:
+  //   paths.appIndexJs,
+  //   // We include the app code last so that if there is a runtime error during
+  //   // initialization, it doesn't blow up the WebpackDevServer client, and
+  //   // changing JS code would still trigger a refresh.
+  // ],
+
+  entry:entryObj,
+  output:{
     publicPath: publicPath,
-    // Point sourcemap entries to original disk location (format as URL on Windows)
-    devtoolModuleFilenameTemplate: info =>
-      path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
+    filename:'static/js/[name].js',
+    chunkFilename: 'static/js/[name].chunk.js',
   },
+  // output: {
+  //   // Add /* filename */ comments to generated require()s in the output.
+  //   pathinfo: true,
+  //   // This does not produce a real file. It's just the virtual path that is
+  //   // served by WebpackDevServer in development. This is the JS bundle
+  //   // containing code from all our entry points, and the Webpack runtime.
+  //   filename: 'static/js/bundle.js',
+  //   // There are also additional JS chunk files if you use code splitting.
+  //   chunkFilename: 'static/js/[name].chunk.js',
+  //   // This is the URL that app is served from. We use "/" in development.
+  //   publicPath: publicPath,
+  //   // Point sourcemap entries to original disk location (format as URL on Windows)
+  //   devtoolModuleFilenameTemplate: info =>
+  //     path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
+  // },
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
     // We placed these paths second because we want `node_modules` to "win"
     // if there are any conflicts. This matches Node resolution mechanism.
     // https://github.com/facebookincubator/create-react-app/issues/253
-    modules: ['node_modules', paths.appNodeModules].concat(
+    modules: ['node_modules','src/asset/pages', paths.appNodeModules].concat(
       // It is guaranteed to exist because we tweak it in `env.js`
       process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
     ),
@@ -95,6 +135,9 @@ module.exports = {
 
 
       '@':resolve('src/components'),
+      'src':resolve('src'),
+      'pages':resolve('src/asset/pages'),
+      'styles':resolve('src/asset/styles'),
       
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
@@ -231,10 +274,13 @@ module.exports = {
     // In development, this will be an empty string.
     new InterpolateHtmlPlugin(env.raw),
     // Generates an `index.html` file with the <script> injected.
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: paths.appHtml,
-    }),
+    // new HtmlWebpackPlugin({
+    //   inject: true,
+    //   template: paths.appHtml,
+    // }),
+
+
+
     // Add module names to factory functions so they appear in browser profiler.
     new webpack.NamedModulesPlugin(),
     // Makes some environment variables available to the JS code, for example:
@@ -257,6 +303,7 @@ module.exports = {
     // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
     // You can remove this if you don't use Moment.js:
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    ...pluginObj
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.

@@ -28,7 +28,7 @@ li,ul,p,div,html,body{margin:0; padding:0;list-style:none;}
 
 
 .header{
-    height:4rem;width:100%; overflow:hidden; background-color:#f5f5f5; font-size:16px;display:flex;text-align:center; justify-content:center;align-items:center;
+    height:44px;width:100%; overflow:hidden; background-color:#f5f5f5; font-size:16px;display:flex;text-align:center; justify-content:center;align-items:center;
     .leftBtn,
     .rightBtn,
     &>a{display:block;position:absolute; top:0; width:44px; height:44px; overflow:hidden; text-align:center; font-size:22px; line-height:44px;color:#666;}

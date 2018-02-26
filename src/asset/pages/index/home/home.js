@@ -1,20 +1,33 @@
 import React,{ Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import Header from '../components/header';
-import ListContent from '../components/list';
+import Header from '@/header';
+import List from '@/list';
+import Footer from '@/footer';
 // import { Tabs } from 'antd';
 // const TabPane = Tabs.TabPane;
-import Tabs from '../components/tabs';
+import Tabs from '@/tabs';
 class Home extends Component {
     constructor(props){
         super(props);
         this.state = {}
     }
+    componentWillMount(){
+        console.log( this.props )
+    }
 
     render(){
         return (
             <div className = "container">
-                <div className="text"></div>
+            <Header />
+            <List />
+            <Footer router = { this.props }/>
+
+
+
+
+
+
+
                 {/* <Tabs defaultActiveKey = "1">
                     <TabPane
                         tab = {
@@ -74,12 +87,6 @@ class Home extends Component {
                     </Tabs.Content>
                 </Tabs> */}
 
-
-                <footer className = "footer">
-                    <NavLink to = "/article"><i className = "icon iconfont icon-viewlist"></i><span> 文章列表 </span></NavLink>
-                    <NavLink to = "/friend"><i className = "icon iconfont icon-atm"></i><span>好友</span></NavLink>
-                    <NavLink to = "/personal"><i className="icon iconfont icon-account"></i><span>个人中心</span></NavLink>
-                </footer>
             </div>                
             
         )

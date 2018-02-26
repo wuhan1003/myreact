@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
-import List from '../components/list'
-import Header from '../components/header';
+import List from '@/list'
+import Header from '@/header';
 class Article extends Component {
     constructor(props){
         super(props);

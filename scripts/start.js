@@ -85,6 +85,8 @@ choosePort(HOST, DEFAULT_PORT)
       if (err) {
         return console.log(err);
       }
+
+      /*清楚console打印*/
       if (isInteractive) {
         clearConsole();
       }
