@@ -43,7 +43,7 @@ dirArr.forEach(item=>{
         eject:true,              //js文件放在body标签最下面
         template:paths.appHtml,  //生成html的模板文件
         chunks:[item],           //筛选插入body标签中生成的js文件
-        filename:`${item}.html`  //文件名称
+        filename:`${item}a.html`  //文件名称
     })
     pluginObj.push(htmlTemplate);
   };
@@ -138,7 +138,7 @@ module.exports = {
       'src':resolve('src'),
       'pages':resolve('src/asset/pages'),
       'styles':resolve('src/asset/styles'),
-      
+      'img':resolve('src/asset/img'),
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',

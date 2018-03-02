@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"
+	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40"
+	xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+		<Author>Administrator</Author>
+		<LastAuthor>pc</LastAuthor>
+		<Revision>1</Revision>
+		<Created>2015-10-21T07:31:27Z</Created>
+		<LastSaved>2017-09-07T03:20:29Z</LastSaved>
+	</DocumentProperties>
+	<CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+		<KSOProductBuildVer dt:dt="string">2052-10.1.0.6747
+		</KSOProductBuildVer>
+	</CustomDocumentProperties>
+	<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+		<WindowWidth>20385</WindowWidth>
+		<WindowHeight>8370</WindowHeight>
+		<ProtectStructure>False</ProtectStructure>
+		<ProtectWindows>False</ProtectWindows>
+	</ExcelWorkbook>
+	<Styles>
+		<Style ss:ID="s26" ss:Name="检查单元格">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3"
+					ss:Color="#333333" />
+				<Border ss:Position="Left" ss:LineStyle="Double" ss:Weight="3"
+					ss:Color="#333333" />
+				<Border ss:Position="Right" ss:LineStyle="Double" ss:Weight="3"
+					ss:Color="#333333" />
+				<Border ss:Position="Top" ss:LineStyle="Double" ss:Weight="3"
+					ss:Color="#333333" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF"
+				ss:Bold="1" />
+			<Interior ss:Color="#969696" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s16" ss:Name="警告文本">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s8" ss:Name="千位分隔">
+			<NumberFormat
+				ss:Format="_-* #,##0.00_-;\-* #,##0.00_-;_-* &quot;-&quot;??_-;_-@_-" />
+		</Style>
+		<Style ss:ID="s24" ss:Name="输出">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#333333" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#333333" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#333333" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#333333" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#333333"
+				ss:Bold="1" />
+			<Interior ss:Color="#C0C0C0" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s18" ss:Name="解释性文本">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#808080"
+				ss:Italic="1" />
+		</Style>
+		<Style ss:ID="s5" ss:Name="千位分隔[0]">
+			<NumberFormat ss:Format="_-* #,##0_-;\-* #,##0_-;_-* &quot;-&quot;_-;_-@_-" />
+		</Style>
+		<Style ss:ID="s20" ss:Name="标题 2">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="3" ss:Color="#C0C0C0" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="13" ss:Color="#003366"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s12" ss:Name="已访问的超链接">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#800080"
+				ss:Underline="Single" />
+		</Style>
+		<Style ss:ID="s4" ss:Name="货币">
+			<NumberFormat
+				ss:Format="_-&quot;￥&quot;* #,##0.00_-;\-&quot;￥&quot;* #,##0.00_-;_-&quot;￥&quot;* &quot;-&quot;??_-;_-@_-" />
+		</Style>
+		<Style ss:ID="s13" ss:Name="注释">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#C0C0C0" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#C0C0C0" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#C0C0C0" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#C0C0C0" />
+			</Borders>
+			<Interior ss:Color="#FFFFCC" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s11" ss:Name="百分比">
+			<NumberFormat ss:Format="0%" />
+		</Style>
+		<Style ss:ID="s3" ss:Name="输入">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#808080" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#808080" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#808080" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#808080" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#333399" />
+			<Interior ss:Color="#FFCC99" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s25" ss:Name="计算">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#808080" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#808080" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#808080" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#808080" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FF9900"
+				ss:Bold="1" />
+			<Interior ss:Color="#C0C0C0" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s1" ss:Name="货币[0]">
+			<NumberFormat
+				ss:Format="_-&quot;￥&quot;* #,##0_-;\-&quot;￥&quot;* #,##0_-;_-&quot;￥&quot;* &quot;-&quot;_-;_-@_-" />
+		</Style>
+		<Style ss:ID="s22" ss:Name="标题 3">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" ss:Color="#0066CC" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#003366"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s17" ss:Name="标题">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="18" ss:Color="#003366"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="Default" ss:Name="Normal">
+			<Alignment />
+			<Borders />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="s47" ss:Name="40% - 强调文字颜色 6">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#FFCC00" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s44" ss:Name="40% - 强调文字颜色 5">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#99CCFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s38" ss:Name="40% - 强调文字颜色 2">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#FF8080" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s6" ss:Name="40% - 强调文字颜色 3">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#00FF00" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s7" ss:Name="差">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#800080" />
+			<Interior ss:Color="#FF99CC" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s37" ss:Name="20% - 强调文字颜色 2">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#FF99CC" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s33" ss:Name="20% - 强调文字颜色 5">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#CCFFFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s31" ss:Name="好">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#008000" />
+			<Interior ss:Color="#CCFFCC" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s27" ss:Name="20% - 强调文字颜色 6">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#FFCC99" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s2" ss:Name="20% - 强调文字颜色 3">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#CCFFCC" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s48" ss:Name="60% - 强调文字颜色 6">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#FF9900" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s32" ss:Name="适中">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#993300" />
+			<Interior ss:Color="#FFFF99" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s9" ss:Name="60% - 强调文字颜色 3">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#00FF00" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s15" ss:Name="标题 4">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#003366"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s10" ss:Name="超链接">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#0000FF"
+				ss:Underline="Single" />
+		</Style>
+		<Style ss:ID="s45" ss:Name="60% - 强调文字颜色 5">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#33CCCC" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s29" ss:Name="链接单元格">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3"
+					ss:Color="#FF9900" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FF9900" />
+		</Style>
+		<Style ss:ID="s23" ss:Name="60% - 强调文字颜色 4">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#800080" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s21" ss:Name="60% - 强调文字颜色 1">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#0066CC" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s14" ss:Name="60% - 强调文字颜色 2">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#FF8080" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s19" ss:Name="标题 1">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="3" ss:Color="#333399" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="15" ss:Color="#003366"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s46" ss:Name="强调文字颜色 6">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#FF6600" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s43" ss:Name="强调文字颜色 5">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#33CCCC" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s39" ss:Name="强调文字颜色 3">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#339966" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s30" ss:Name="汇总">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3"
+					ss:Color="#333399" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" ss:Color="#333399" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s28" ss:Name="强调文字颜色 2">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#FF0000" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s40" ss:Name="强调文字颜色 4">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#800080" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s34" ss:Name="强调文字颜色 1">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#FFFFFF" />
+			<Interior ss:Color="#333399" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s41" ss:Name="20% - 强调文字颜色 4">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#CC99FF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s35" ss:Name="20% - 强调文字颜色 1">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#CCCCFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s42" ss:Name="40% - 强调文字颜色 4">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#CC99FF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s36" ss:Name="40% - 强调文字颜色 1">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+			<Interior ss:Color="#99CCFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s49" />
+		<Style ss:ID="s50">
+			<Alignment ss:Horizontal="Justify" />
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="16" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s51">
+			<Alignment ss:Horizontal="Center" />
+			<Font ss:FontName="方正小标宋简体" x:CharSet="134" ss:Size="22" />
+		</Style>
+		<Style ss:ID="s52">
+			<Alignment ss:Horizontal="Justify" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="22" ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s53">
+			<Alignment ss:Horizontal="Justify" />
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s54">
+			<Alignment ss:Horizontal="Justify" />
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s55">
+			<Alignment ss:Horizontal="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+		</Style>
+		<Style ss:ID="s56">
+			<Alignment ss:Horizontal="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+		</Style>
+		<Style ss:ID="s57">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+		</Style>
+		<Style ss:ID="s58">
+			<Alignment ss:Horizontal="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+		</Style>
+		<Style ss:ID="s59">
+			<Alignment ss:Horizontal="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+		</Style>
+		<Style ss:ID="s60">
+			<Alignment ss:Horizontal="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s61">
+			<Alignment ss:Horizontal="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s62">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="10" />
+		</Style>
+		<Style ss:ID="s63">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="10" />
+			<NumberFormat ss:Format="0.00%" />
+		</Style>
+		<Style ss:ID="s64">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s65">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="10" />
+		</Style>
+		<Style ss:ID="s66">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s67">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s68">
+			<Alignment ss:Horizontal="Left" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s69">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s70">
+			<Alignment ss:Horizontal="Left" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<NumberFormat ss:Format="0.00%" />
+		</Style>
+		<Style ss:ID="s71">
+			<Alignment ss:Horizontal="Left" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s72">
+			<Alignment ss:Horizontal="Justify" />
+			<Borders />
+			<Font ss:FontName="Times New Roman" x:CharSet="134" ss:Size="14"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s73">
+			<Borders />
+		</Style>
+		<Style ss:ID="s74">
+			<Alignment ss:Horizontal="Center" />
+			<Font ss:FontName="方正小标宋简体" x:CharSet="134" ss:Size="22" />
+		</Style>
+		<Style ss:ID="s75">
+			<Alignment ss:Horizontal="Justify" />
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s76">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+		</Style>
+		<Style ss:ID="s77">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s78">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s79">
+			<Alignment ss:Horizontal="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+		</Style>
+		<Style ss:ID="s80">
+			<Alignment ss:Horizontal="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+		</Style>
+	</Styles>
+	<Worksheet ss:Name="Sheet1">
+		<Names>
+			<NamedRange ss:Name="_FilterDatabase" ss:RefersTo="=Sheet1!R10C6:R10C6"
+				ss:Hidden="1" />
+		</Names>
+		<Table ss:ExpandedColumnCount="21" ss:ExpandedRowCount="13"
+			x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="54"
+			ss:DefaultRowHeight="14.25">
+			<Column ss:Index="1" ss:StyleID="s49" ss:AutoFitWidth="0"
+				ss:Width="66.75" />
+			<Column ss:Index="3" ss:StyleID="s49" ss:AutoFitWidth="0"
+				ss:Width="21.75" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="202.5" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="31.5" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="305.25" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="52.5" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="43.5" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="39.75" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="35.25" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="44.25" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="60" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="57.75" />
+			<Column ss:StyleID="s49" ss:AutoFitWidth="0" ss:Width="100.5" />
+			<Column ss:StyleID="s49" ss:Width="76.5" />
+			<Column ss:StyleID="s49" ss:Width="75.75" />
+			<Column ss:Index="18" ss:StyleID="s49" ss:Width="62.25" />
+			<Column ss:Index="21" ss:StyleID="s49" ss:Width="62.25" />
+			<Row />
+			<Row ss:Height="20.25">
+				<Cell ss:StyleID="s50">
+					<Data ss:Type="String">附件1</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="27">
+				<Cell ss:StyleID="s74" ss:MergeAcross="15">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						医疗机构<U> 2017第四季度 </U>年临床路径统计工作表
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="27">
+				<Cell ss:StyleID="s52" />
+			</Row>
+			<Row ss:Height="51.75">
+				<Cell ss:StyleID="s75" ss:MergeAcross="15">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font x:Family="Modern" html:Color="#000000">填报日期：</Font>
+						<U>
+							<Font x:Family="Modern" html:Color="#000000"></Font>
+						</U>
+						<Font x:Family="Modern" html:Color="#000000">联系人：</Font>
+						<U>
+							<Font x:Family="Modern" html:Color="#000000"></Font>
+						</U>
+						<Font x:Family="Modern" html:Color="#000000">联系电话：</Font>
+						<U>
+							<Font x:Family="Modern" html:Color="#000000"></Font>
+						</U>
+						<Font x:Family="Modern" html:Color="#000000">单位（盖章）：</Font>
+						<U>
+							<Font x:Family="Modern" html:Color="#000000"></Font>
+						</U>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s54" />
+			</Row>
+			<Row ss:Height="37.5">
+				<Cell ss:StyleID="s79" ss:MergeDown="1">
+					<Data ss:Type="String">医疗机构名称</Data>
+				</Cell>
+				<Cell ss:StyleID="s80" ss:MergeDown="1">
+					<Data ss:Type="String">级别</Data>
+				</Cell>
+				<Cell ss:StyleID="s76" ss:MergeAcross="9">
+					<Data ss:Type="String">工作开展情况</Data>
+				</Cell>
+				<Cell ss:StyleID="s77" ss:MergeAcross="1">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font x:Family="Modern" html:Color="#FF0000">（全院）</Font>
+						<Font x:Family="Modern">平均住院日变化</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s78" ss:MergeAcross="1">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font x:Family="Modern" html:Color="#FF0000">（全院）</Font>
+						<Font x:Family="Modern">平均住院费用变化</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="99.75">
+				<Cell ss:Index="3" ss:StyleID="s60">
+					<Data ss:Type="String">开展专业数(个)</Data>
+				</Cell>
+				<Cell ss:StyleID="s61">
+					<Data ss:Type="String">专业名称</Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">开展病种数(个)</Data>
+				</Cell>
+				<Cell ss:StyleID="s61">
+					<Data ss:Type="String">病种名称</Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">进入路径病例数（例）</Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">入组完成率（%）</Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">变异数(例)</Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">退出路径病例数（例）</Data>
+				</Cell>
+				<Cell ss:StyleID="s61">
+					<Data ss:Type="String">全院出院病例数（例）</Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						实施临床路径病例数占
+						<Font html:Color="#FF0000">（全院）</Font>
+						出院病例数比例（%）
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">平均住院日（天）</Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">与前一年同期相比情况（%） </Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">平均住院费用（元）</Data>
+				</Cell>
+				<Cell ss:StyleID="s60">
+					<Data ss:Type="String">与前一年同期相比情况（%）</Data>
+				</Cell>
+			</Row>
+			<Row ss:StyleID="s49" ss:Height="84">
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">系统内部机构</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String"></Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">16</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					其他,临床微生物学专业,口腔修复专业,彝医学,肝脏移植项目,小肠移植项目,神经外科专业,骨科专业,泌尿外科专业,肾脏移植项目,胸外科专业,心脏大血管外科专业,心脏移植项目,肺脏移植项目,烧伤科专业,整形外科专业,
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">6</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					沙门氏菌感染 NOS,丙型副伤寒,施米茨(－施蒂策)痢疾,小儿感冒病,古典型霍乱,副伤寒,
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">22</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">68.18</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">4</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">1</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">2200</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">7</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">6</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+			</Row>
+			<Row ss:StyleID="s49" ss:Height="84">
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">系统内部机构</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String"></Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">1</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">-100</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">1</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">1</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">1</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">100</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">1</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">1</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+			</Row>
+			<Row ss:StyleID="s49" ss:Height="84">
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">梧州市卫生和计划生育委员会</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String"></Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">-100</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">100</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+			</Row>
+			<Row ss:StyleID="s49" ss:Height="84">
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">梧州市卫生和计划生育委员会</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String"></Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">-100</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">100</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+			</Row>
+			<Row ss:StyleID="s49" ss:Height="84">
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">系统内部机构</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String"></Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">
+					
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">2,213</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">80.03</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">221</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">221</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">22,222</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">9.96</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">112</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="Number">223</Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s64">
+					<Data ss:Type="String">合计</Data>
+				</Cell>
+				<Cell ss:StyleID="s65" />
+				<Cell ss:StyleID="s66" />
+				<Cell ss:StyleID="s67" />
+				<Cell ss:StyleID="s67" />
+				<Cell ss:StyleID="s67" />
+				<Cell ss:StyleID="s68" ss:Formula="=SUM(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s70" ss:Formula="=AVERAGE(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s68" ss:Formula="=SUM(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s68" ss:Formula="=SUM(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s68" ss:Formula="=SUM(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s70" ss:Formula="=AVERAGE(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s71" ss:Formula="=AVERAGE(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s70" ss:Formula="=AVERAGE(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s68" ss:Formula="=AVERAGE(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s70" ss:Formula="=AVERAGE(R[-1]C:R[-5]C)">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="18.75">
+				<Cell ss:Index="10" ss:StyleID="s72" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+			</Row>
+			<Row>
+				<Cell ss:Index="10" ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s73" />
+			</Row>
+		</Table>
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<PageSetup>
+				<Header />
+				<Footer />
+			</PageSetup>
+			<Print>
+				<ValidPrinterInfo />
+				<PaperSizeIndex>9</PaperSizeIndex>
+				<HorizontalResolution>600</HorizontalResolution>
+				<VerticalResolution>600</VerticalResolution>
+			</Print>
+			<Selected />
+			<TopRowVisible>5</TopRowVisible>
+			<LeftColumnVisible>0</LeftColumnVisible>
+			<Panes>
+				<Pane>
+					<Number>3</Number>
+					<ActiveRow>10</ActiveRow>
+					<ActiveCol>15</ActiveCol>
+					<RangeSelection>R11C16</RangeSelection>
+				</Pane>
+			</Panes>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+		<AutoFilter x:Range="R10C6:R10C6"
+			xmlns="urn:schemas-microsoft-com:office:excel" />
+	</Worksheet>
+	<Worksheet ss:Name="Sheet2">
+		<Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1"
+			x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="54"
+			ss:DefaultRowHeight="14.25" />
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<PageSetup>
+				<Header />
+				<Footer />
+			</PageSetup>
+			<TopRowVisible>0</TopRowVisible>
+			<LeftColumnVisible>0</LeftColumnVisible>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+	</Worksheet>
+	<Worksheet ss:Name="Sheet3">
+		<Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1"
+			x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="54"
+			ss:DefaultRowHeight="14.25" />
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<PageSetup>
+				<Header />
+				<Footer />
+			</PageSetup>
+			<TopRowVisible>0</TopRowVisible>
+			<LeftColumnVisible>0</LeftColumnVisible>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+	</Worksheet>
+</Workbook>

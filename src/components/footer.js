@@ -10,11 +10,17 @@ class Footer extends Component {
     }
     componentWillMount(){
         const { path } = this.props.router.match;
+
+        if(path === "/" || path === "/article"){
+
+        }
+        
+
     }
     render(){
         return (
             <footer className = "footer">
-                <NavLink to = "/article"><i className = "icon iconfont icon-viewlist"></i><span> 文章列表 </span></NavLink>
+                <NavLink to = "/" activeClassName = "active"><i className = "icon iconfont icon-viewlist"></i><span> 文章列表 </span></NavLink>
                 <NavLink to = "/friend"><i className = "icon iconfont icon-atm"></i><span>好友</span></NavLink>
                 <NavLink to = "/personal"><i className="icon iconfont icon-account"></i><span>个人中心</span></NavLink>
             </footer>

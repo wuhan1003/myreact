@@ -60,6 +60,11 @@ li,ul,p,div,html,body{margin:0; padding:0;list-style:none;}
     }
 }
 
+
+.footer a.active{
+    i,span{color:#ff7125 !important;}
+}
+
 .tabs {
     width:100%; 
     .content {

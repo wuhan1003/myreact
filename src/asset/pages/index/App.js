@@ -36,59 +36,64 @@ function NoFound(props){
 
 
 // console.log( r );
-// class App extends Component {
-
-
-
-//   componentWillMount(){
-//     console.log( this )
-//   }
-//   render() {
-//     return (
-//       <div className="App">
-//         <Router>
+class App extends Component {
+  componentWillMount(){
+    console.log( this )
+  }
+  getConfirmation = (message) => {
+        console.log(message)
+        window.confirm(message)
+        // callback(allowTransition)
+    }
+    // const mycallback=(s)=>{
+    //     console.log(s);
+    // }
+  render() {
+    return (
+      <div className="App">
+        <Router>
         
 
 
-//           <div className="body">
-//               {/* <Redirect exact = { true} from = "/" to = "/index"></Redirect> */}
+          <Switch>
+              {/* <Redirect exact = { true} from = "/" to = "/index"></Redirect> */}
               
             
               
               
 
-//               <Route exact = { true } path = "/"  component = { Home } />
-//               <Route exact = { true } path = "/article"  component = { Article } />
-//               <Route exact = { true } path = "/friend" component = { Friend } />
-//               <Route exact = { true } path = "/personal" component = { Personal } />
+              <Route exact = { true } path = "/"  component = { Home } />
+              <Route exact = { true } path = "/article"  component = { Article } />
+              <Route exact = { true } path = "/friend" component = { Friend } />
+              <Route exact = { true } path = "/personal" component = { Personal } />
+              <Route exact = { true } path = "*" component={ NoFound } />
       
-      
-//               {/* switch 匹配第一个满足条件的路由地址*/   }
-//               {/* <Switch>
-//                 <Route exact = { true } path = "/index" component = { Home }></Route>
-//                 <Route exact = { true } path = "/article/:id" component = { ArticleDetail } ></Route>
-//                 <Route exact = { true } path = "/friend/:id" component = { FriendDetail } ></Route>
-//                 <Route exact = { true } path = "*" component={ NoFound } />
-//               </Switch> */}
+              {/* switch 匹配第一个满足条件的路由地址*/   }
+              {/* <Switch>
+                <Route exact = { true } path = "/index" component = { Home }></Route>
+                <Route exact = { true } path = "/article/:id" component = { ArticleDetail } ></Route>
+                <Route exact = { true } path = "/friend/:id" component = { FriendDetail } ></Route>
+                <Route exact = { true } path = "*" component={ NoFound } />
+              </Switch> */}
 
 
 
             
-//           </div>
-//         </Router>               
-//       </div>
-//     );
-//   }
-// }
-const App = () => (
-    <Switch>
-      <Route exact = { true } path = "/"  component = { Home } />
-      <Route exact = { true } path = "/article"  component = { Article } />
-      <Route exact = { true } path = "/friend" component = { Friend } />
-      <Route exact = { true } path = "/personal" component = { Personal } />
-      <Route path = "*" component = { NoFound } />
-    </Switch>
-)
+            </Switch>
+        </Router>               
+      </div>
+    );
+  }
+}
+// const App = () => (
+//     <Switch>
+//       <Route exact = { true } path = "/"  component = { Home } />
+//       <Route exact = { true } path = "/article"  component = { Article } />
+//       <Route exact = { true } path = "/friend" component = { Friend } />
+//       <Route exact = { true } path = "/personal" component = { Personal } />
+//       <Route path = "*" component = { NoFound } />
+//     </Switch>
+// )
 
 
 export default App;

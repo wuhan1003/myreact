@@ -20,9 +20,7 @@ class Header extends Component {
         history.goBack();
     }
     componentWillMount(){
-        
-        console.log( this )
-        console.log(this.props.localtion)
+     
     }
     render(){
         return(
