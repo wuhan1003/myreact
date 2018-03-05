@@ -9,15 +9,21 @@ function Nofound(props){
     return <p>404</p>
 };
 class App extends Component {
+    constructor(props){
+        super(props);
+        this.state={}
+    }
+
+
     componentWillMount(){
-       
+       console.log( this.props.rootReducers)
     }
     render(){
         return (
             <Switch>
-            <Route component = { Login } />
+            <Route exact path = '/' component = { Login } />
             {/* <Redirect exact = { true } from = "/" to = "/login" /> */}
-            <Route exact = { true } path = "/register" component = { Register } />
+            <Route  path = "/register" component = { Register } />
             {/* <Route path ="*" component = { Nofound }/> */}
 
 

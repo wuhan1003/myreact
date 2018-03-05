@@ -49,7 +49,7 @@ module.exports = function(proxy, allowedHost) {
     // for some reason broken when imported through Webpack. If you just want to
     // use an image, put it in `src` and `import` it from JavaScript instead.
     contentBase: paths.appPublic,
-    index:'indexa.html',
+    index:'login.html',
     // By default files from `contentBase` will not trigger a page reload.
     watchContentBase: true,
     // Enable hot reloading server. It will provide /sockjs-node/ endpoint
@@ -73,7 +73,7 @@ module.exports = function(proxy, allowedHost) {
     },
     // Enable HTTPS if the HTTPS environment variable is set to 'true'
     https: protocol === 'https',
-    host: host,
+    host: `${host}:3000/index.html`,
     overlay: false,
     historyApiFallback: {
       // Paths with dots should still use the history fallback.

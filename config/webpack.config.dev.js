@@ -34,16 +34,16 @@ const filePath = resolve('./src/asset/pages');
 const dirArr = fs.readdirSync(filePath);
 let entryObj = {},pluginObj =[];
 dirArr.forEach(item=>{
-  let entryFile = [require.resolve('./polyfills')];
+  let entryFile = [require.resolve('./polyfills'),require.resolve('react-dev-utils/webpackHotDevClient'),];
   const dirPaht = `${filePath}/${item}`;
   if(fs.statSync(dirPaht).isDirectory()){
-    entryFile.push(`${item}/index.js`);
+    entryFile.push(`src/asset/pages/${item}/index.js`);
     entryObj[item] = entryFile;
     const htmlTemplate = new HtmlWebpackPlugin({
         eject:true,              //js文件放在body标签最下面
         template:paths.appHtml,  //生成html的模板文件
         chunks:[item],           //筛选插入body标签中生成的js文件
-        filename:`${item}a.html`  //文件名称
+        filename:`${item}.html`  //文件名称
     })
     pluginObj.push(htmlTemplate);
   };
@@ -120,7 +120,7 @@ module.exports = {
     // We placed these paths second because we want `node_modules` to "win"
     // if there are any conflicts. This matches Node resolution mechanism.
     // https://github.com/facebookincubator/create-react-app/issues/253
-    modules: ['node_modules','src/asset/pages', paths.appNodeModules].concat(
+    modules: ['node_modules',path.resolve(__dirname,'src'), paths.appNodeModules].concat(
       // It is guaranteed to exist because we tweak it in `env.js`
       process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
     ),
@@ -161,21 +161,21 @@ module.exports = {
 
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
-      {
-        test: /\.(js|jsx|mjs)$/,
-        enforce: 'pre',
-        use: [
-          {
-            options: {
-              formatter: eslintFormatter,
-              eslintPath: require.resolve('eslint'),
+      // {
+      //   test: /\.(js|jsx|mjs)$/,
+      //   enforce: 'pre',
+      //   use: [
+      //     {
+      //       options: {
+      //         formatter: eslintFormatter,
+      //         eslintPath: require.resolve('eslint'),
               
-            },
-            loader: require.resolve('eslint-loader'),
-          },
-        ],
-        include: paths.appSrc,
-      },
+      //       },
+      //       loader: require.resolve('eslint-loader'),
+      //     },
+      //   ],
+      //   include: paths.appSrc,
+      // },
       {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall
@@ -187,6 +187,7 @@ module.exports = {
           {
             test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
             loader: require.resolve('url-loader'),
+          //  include:[path.resolve(__dirname,'./src/asset')],
             options: {
               limit: 10000,
               name: 'static/media/[name].[hash:8].[ext]',
