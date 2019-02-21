@@ -14,7 +14,7 @@ class Login extends Component {
         }
     }
     componentWillMount(){
-        console.log( this );
+        console.log( this.props.store );
     }
     handleSubmit = (e) => {
         e.preventDefault();
@@ -74,8 +74,8 @@ Login = Form.create()(Login);
 
 
 const mapStateToProps = (state, ownProps) => {
-
-    console.log(state)
+    console.log( ownProps )
+    console.log('state',state)
 
     //这里将defaultState 映射到组建的props上
     return {
@@ -84,6 +84,7 @@ const mapStateToProps = (state, ownProps) => {
 }
 // //这里将dispatch 映射到组建的props上
 const mapDispatchToProps = (dispatch, ownProps) => {
+    console.log('dispatch', dispatch )
     return {
         change: (type) => {
             dispatch({type:type})

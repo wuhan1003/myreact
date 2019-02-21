@@ -91,7 +91,7 @@ choosePort(HOST, DEFAULT_PORT)
         clearConsole();
       }
       console.log(chalk.cyan('Starting the development server...\n'));
-      openBrowser('localhost:3000/login.html');
+      // openBrowser('localhost:3000/login.html');
     });
 
     ['SIGINT', 'SIGTERM'].forEach(function(sig) {
